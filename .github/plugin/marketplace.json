@@ -1,0 +1,19 @@
+{
+  "name": "nwave-marketplace",
+  "owner": {
+    "name": "nWave AI",
+    "email": "michele.brissoni@brix.consulting"
+  },
+  "metadata": {
+    "description": "nWave Copilot CLI Plugin Marketplace",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "nwave",
+      "description": "nWave development methodology plugin",
+      "version": "0.1.0",
+      "source": "plugins/nwave"
+    }
+  ]
+}

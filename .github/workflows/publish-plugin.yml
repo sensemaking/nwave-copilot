@@ -1,0 +1,45 @@
+name: Publish Plugin
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Update Version
+        id: version
+        run: |
+          python .github/scripts/update_version.py
+          VERSION=$(grep -m 1 'version = ' pyproject.toml | cut -d '"' -f 2)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install .
+
+      - name: Build Plugin
+        run: nwave-copilot build-plugin --output plugins/nwave
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Force add plugins/nwave in case it is ignored
+          git add -f plugins/nwave
+          git add .github/plugin/marketplace.json pyproject.toml
+          git commit -m "chore: release plugin version ${{ env.VERSION }} [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
