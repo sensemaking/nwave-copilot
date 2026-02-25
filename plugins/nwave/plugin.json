@@ -1,0 +1,20 @@
+{
+  "name": "nwave",
+  "description": "nWave: A six-wave AI-assisted software development methodology. 22 specialist agents, 68+ skills, and DES enforcement hooks for TDD discipline.",
+  "version": "0.1.0",
+  "author": {
+    "name": "nWave contributors"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/nwave-dev/nwave",
+  "keywords": [
+    "nwave",
+    "tdd",
+    "agile",
+    "methodology",
+    "software-development"
+  ],
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks.json"
+}

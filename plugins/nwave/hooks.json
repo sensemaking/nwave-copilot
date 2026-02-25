@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+      }
+    ],
+    "subagentStop": [
+      {
+        "type": "command",
+        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+      }
+    ]
+  }
+}
