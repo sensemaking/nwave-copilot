@@ -4,22 +4,22 @@
     "preToolUse": [
       {
         "type": "command",
-        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
-        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+        "bash": "/opt/hostedtoolcache/Python/3.13.11/x64/bin/python -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& '/opt/hostedtoolcache/Python/3.13.11/x64/bin/python' -m des.adapters.drivers.hooks.copilot_hook_adapter"
       }
     ],
     "postToolUse": [
       {
         "type": "command",
-        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
-        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+        "bash": "/opt/hostedtoolcache/Python/3.13.11/x64/bin/python -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& '/opt/hostedtoolcache/Python/3.13.11/x64/bin/python' -m des.adapters.drivers.hooks.copilot_hook_adapter"
       }
     ],
     "subagentStop": [
       {
         "type": "command",
-        "bash": "C:\\Python313\\python.exe -m des.adapters.drivers.hooks.copilot_hook_adapter",
-        "powershell": "& 'C:\\Python313\\python.exe' -m des.adapters.drivers.hooks.copilot_hook_adapter"
+        "bash": "/opt/hostedtoolcache/Python/3.13.11/x64/bin/python -m des.adapters.drivers.hooks.copilot_hook_adapter",
+        "powershell": "& '/opt/hostedtoolcache/Python/3.13.11/x64/bin/python' -m des.adapters.drivers.hooks.copilot_hook_adapter"
       }
     ]
   }
