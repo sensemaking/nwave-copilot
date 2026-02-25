@@ -3,7 +3,7 @@ requires = ["hatchling>=1.21.0"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["nwave_copilot"]
+packages = ["nwave_copilot", "nwave_copilot.plugins", "nwave_copilot.converters"]
 
 [tool.hatch.build.targets.wheel.force-include]
 "nWave/agents" = "nWave/agents"
