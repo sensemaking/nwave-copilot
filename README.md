@@ -10,7 +10,8 @@ nWave is a six-wave AI-assisted development methodology (DISCOVER â†’ DISCUSS â†
 
 1.  **Install the Python package** (required for hooks execution):
     ```bash
-    pip install nwave-copilot
+    # Install directly from the repository
+    pip install git+https://github.com/nwave-ai/nwave.git
     ```
 
 2.  **Add the plugin from the marketplace**:
@@ -23,7 +24,7 @@ nWave is a six-wave AI-assisted development methodology (DISCOVER â†’ DISCUSS â†
 ### Method 2: Manual Installation (Legacy)
 
 ```bash
-pip install nwave-copilot
+pip install git+https://github.com/nwave-ai/nwave.git
 ```
 
 ## Usage
